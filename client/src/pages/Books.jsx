@@ -38,7 +38,9 @@ const Books = () => {
                         <p>{book.dscr}</p>
                         <span>{book.price}</span>
                         <button className="delete" onClick={() => handleDelete(book.id)}>Delete</button>
-                        <button className="update">Update</button>
+                        <button className="update">
+                            <Link to={`/update/${book.id}`}>Update</Link>
+                        </button>
                     </div>
                 ))}
             </div>
